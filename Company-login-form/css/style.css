@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+.bg-purple {
+    background: rgb(168, 159, 255);
+    display: flex;
+}
+
+.img-con {
+
+    border: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.img-con img {
+    border-radius: 15px;
+}
+
+
+
+
+.logo {
+    width: 90px;
+}
+
+
+.row {
+    display: flex;
+}
+
+
+.row .col2 {
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+
+
+.form-container {
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.welcome h1 {
+    font-size: 1.3rem;
+}
+
+.welcome p {
+    font-size: 0.7rem;
+}
+
+.email, .password, .name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    transition: all 1s;
+}
+
+
+.name {
+    height: 0;
+    overflow: hidden;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+input {
+    border: 1px solid #999;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+.forget {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+
+.forget div {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.forget div label {
+    margin: 0;
+}
+
+
+.forget a {
+    font-size: 0.7rem;
+    color: #555;
+    text-decoration: none;
+}
+
+
+.login {
+    width: 100%;
+    padding: 6px;
+    background: rgb(107, 96, 207);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.terms {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+.terms a, .small a {
+    color: rgb(107, 96, 207);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.small {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #666;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+@media all and (max-width: 870px) {
+    .row {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .row .col2 {
+        width: 100%
+    }
+}
+
+
+@media all and (max-width: 425px) {
+    .row .bg-purple {
+        display: none;
+    }
+}
