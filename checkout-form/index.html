@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Checkout Form</title>
+
+
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h3>Logo</h3>
+        </div>
+
+    </nav>
+
+
+    <div class="col-container">
+
+
+        <div class="col1">
+            <div class="form-container">
+                <form action="">
+                    <div class="contact sect">
+                        <label for="">Contact</label>
+                        <input type="text" placeholder="Email or mobile number">
+                        <div class="check-div">
+                            <input type="checkbox" name="" id="news">
+                            <label class="small-label" for="news">Email me with news and offers</label>
+                        </div>
+                    </div>
+                    <div class="delivery sect">
+                        <select name="" id="">
+                            <option value="">Country</option>
+                            <option value="">Pakistan</option>
+                            <option value="">India</option>
+                            <option value="">Bangladesh</option>
+                        </select>
+                        <div class="name row">
+                            <input type="text" name="" id="" placeholder="First name">
+                            <input type="text" placeholder="Last name">
+                        </div>
+                        <input type="text" placeholder="Address">
+                        <input type="text" placeholder="Apartment">
+                        <div class="row city">
+                            <input type="text" placeholder="City">
+                            <input type="number" placeholder="Postal Code">
+                        </div>
+                        <input type="number" placeholder="Phone">
+                        <div class="check-div">
+                            <input type="checkbox" name="" id="info">
+                            <label class="small-label" for="info">Save this info for next time</label>
+                        </div>
+                    </div>
+
+                    <div class="shipping sect">
+                        <label for="">Shipping method</label>
+                        <input class="bg-blue" type="text" placeholder="Standard" disabled>
+                    </div>
+
+                    <div class="payment sect">
+                        <label for="">Payment</label>
+                        <div class="joint">
+                            <div class="cash-div">
+                                <input type="radio" name="payment" id="cash">
+                                <label class="normal-text" for="cash">Cash On Delivery</label>
+                            </div>
+                            <div class="online-div">
+                                <input type="radio" name="payment" id="online">
+                                <label class="normal-text" for="online">Online Transfer</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="billing sect">
+                        <label for="">Billing Address</label>
+                        <div class="joint">
+                            <div class="same-div">
+                                    <input type="radio" name="billing" id="same">
+                                    <label class="normal-text" for="same">Same as shipping address</label>
+                            </div>
+                            <div class="diff-div">
+                                    <input type="radio" name="billing" id="diff">
+                                    <label class="normal-text" for="diff">Use a different billing address</label>
+                            </div>
+                            <div class="diff-address" id="differentForm">
+                                <select name="" id="">
+                                    <option value="">Country</option>
+                                    <option value="">Pakistan</option>
+                                    <option value="">India</option>
+                                    <option value="">Bangladesh</option>
+                                </select>
+                                <input type="text" placeholder="Address">
+                                <input type="text" placeholder="Apartment">
+                                <div class="row city">
+                                    <input type="text" placeholder="City">
+                                    <input type="number" placeholder="Postal Code">
+                                </div>
+                                <input type="number" placeholder="Phone">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="submit">Complete Order</button>
+                </form>
+
+                <div class="footer">
+                    <hr>
+                    <p>all rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col2">
+            <h1>CART</h1>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
