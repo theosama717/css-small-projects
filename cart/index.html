@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/96d9e792db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Cart</h2>
+
+    <table>
+        <thead>
+        <tr class="head-tr">
+            <th></th>
+            <th></th>
+            <th class="name">Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><div class="img"><img src="images/shirt.jpg" alt=""></div></td>
+            <td class="name">
+                <p>Shirts for Men</p>
+                <small>Lorem ipsum dolor sit amet.</small>    
+            </td>
+            <td>$30.00</td>
+            <td>
+                <button class="quantity-btn decBtn" >-</button>
+                <input type="number" value="1">
+                <button class="quantity-btn incBtn">+</button>
+            </td>
+            <td>$40.00</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><div class="img"><img src="images/pant.jpg" alt=""></div></td>
+            <td class="name">
+                <p>Pants for Men</p>
+                <small>Lorem ipsum dolor sit amet.</small>    
+            </td>
+            <td>$30.00</td>
+            <td>
+                <button class="quantity-btn decBtn" >-</button>
+                <input type="number" value="1">
+                <button class="quantity-btn incBtn">+</button>
+            </td>
+            <td>$40.00</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><div class="img"><img src="images/watch.jpg" alt=""></div></td>
+            <td class="name">
+                <p>Watch for Men</p>
+                <small>Lorem ipsum dolor sit amet.</small>    
+            </td>
+            <td>$30.00</td>
+            <td>
+                <button class="quantity-btn decBtn" >-</button>
+                <input type="number" value="1">
+                <button class="quantity-btn incBtn">+</button>
+            </td>
+            <td>$40.00</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="" id=""></td>
+            <td><div class="img"><img src="images/shoes.jpg" alt=""></div></td>
+            <td class="name">
+                <p>Sneaker Shoes for Men</p>
+                <small>Lorem ipsum dolor sit amet.</small>    
+            </td>
+            <td>$30.00</td>
+            <td>
+                <button class="quantity-btn decBtn" >-</button>
+                <input type="number" value="1">
+                <button class="quantity-btn incBtn">+</button>
+            </td>
+            <td>$40.00</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+        </tr>
+        
+        </tbody>
+    </table>
+
+
+
+    <script>
+        const incBtn = document.querySelectorAll('.incBtn')
+        const decBtn = document.querySelectorAll('.decBtn')
+        
+
+
+        incBtn.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                let input = btn.parentElement.childNodes[3]
+                input.value++
+            })
+        })
+
+        decBtn.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                let input = btn.parentElement.childNodes[3]
+                input.value--
+            })
+        })
+    </script>
+</body>
+</html>
